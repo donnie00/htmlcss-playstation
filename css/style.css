@@ -1,5 +1,17 @@
 .jumbo {
 	background-image: url(/img/jumbo-bg.png);
-	background-position: center;
-	background-size: cover;
+	background-size: contain;
+}
+
+.hero-banner-2 {
+	background-image: url(/img/it-takes-two-hero-banner-desktop.jpg);
+}
+
+.carousel-accessories > *:hover {
+	border-bottom: 2px solid blue;
+}
+
+footer a {
+	color: white;
+	text-decoration: none;
 }
