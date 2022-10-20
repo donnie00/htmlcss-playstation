@@ -19,6 +19,7 @@
 
 .carousel-accessories * {
 	border-bottom: 2px solid transparent;
+	padding: 0 1rem;
 }
 
 footer a {
@@ -33,6 +34,14 @@ main {
 section,
 footer {
 	padding: 3rem 0;
+}
+
+h1 {
+	font-size: calc(1.375rem + 1.8vw);
+}
+
+h2 {
+	font-size: calc(1.375rem + 1.5vw);
 }
 
 .card {
@@ -51,4 +60,16 @@ footer {
 
 .my-list-unstyled {
 	list-style: none;
+}
+
+.my-list-unstyled > li {
+	padding: 0.2rem 0;
+}
+
+.banner {
+	padding: 0;
+}
+
+.banner p {
+	padding: 1rem 0;
 }
