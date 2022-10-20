@@ -1,17 +1,54 @@
-.jumbo {
+.banner-big-jumbo {
 	background-image: url(/img/jumbo-bg.png);
-	background-size: contain;
+	padding-top: 300px;
 }
 
-.hero-banner-2 {
+.banner-big-2 {
 	background-image: url(/img/it-takes-two-hero-banner-desktop.jpg);
+}
+
+[class^='banner-big'] {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 .carousel-accessories > *:hover {
 	border-bottom: 2px solid blue;
 }
 
+.carousel-accessories * {
+	border-bottom: 2px solid transparent;
+}
+
 footer a {
 	color: white;
 	text-decoration: none;
+}
+
+main {
+	margin-top: 90px;
+}
+
+section,
+footer {
+	padding: 3rem 0;
+}
+
+.card {
+	padding: 0.1rem;
+	border-radius: 1rem;
+	border: none;
+}
+
+.card:hover {
+	outline: 2px solid var(--bs-primary);
+}
+
+.carousel-accessories p {
+	display: none;
+}
+
+.my-list-unstyled {
+	list-style: none;
 }
