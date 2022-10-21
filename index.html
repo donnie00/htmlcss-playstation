@@ -31,33 +31,84 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarToggler">
                <ul class="navbar-nav">
-                  <li class="nav-item">
-                     <a class="nav-link" href="#">Giochi <img src="img/chevron-down-solid.svg" alt="" width="10px"></a>
+                  <li class="nav-item dropdown-center">
+                     <a class="nav-link" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                        Giochi
+                        <img class="dropdown-toggle" src="img/chevron-down-solid.svg" alt="" width="10px">
+                     </a>
+                     <ul class="dropdown-menu">
+                        <li><a href="#" class="dropdown-item">link</a></li>
+                        <li><a href="#" class="dropdown-item">link</a></li>
+                        <li><a href="#" class="dropdown-item">link</a></li>
+                     </ul>
                   </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="#">Hardware <img src="img/chevron-down-solid.svg" alt=""
-                           width="10px"></a>
+                  <li class="nav-item dropdown-center">
+                     <a class="nav-link" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                        Hardware
+                        <img class="dropdown-toggle" src="img/chevron-down-solid.svg" alt="" width="10px"></a>
+                     <ul class="dropdown-menu">
+                        <li><a href="#" class="dropdown-item">link</a></li>
+                        <li><a href="#" class="dropdown-item">link</a></li>
+                        <li><a href="#" class="dropdown-item">link</a></li>
+                     </ul>
                   </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="#">Servizi <img src="img/chevron-down-solid.svg" alt="" width="10px"></a>
+                  <li class="nav-item dropdown-center">
+                     <a class="nav-link" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                        Servizi
+                        <img class="dropdown-toggle" src="img/chevron-down-solid.svg" alt="" width="10px"></a>
+                     <ul class="dropdown-menu">
+                        <li><a href="#" class="dropdown-item">link</a></li>
+                        <li><a href="#" class="dropdown-item">link</a></li>
+                        <li><a href="#" class="dropdown-item">link</a></li>
+                     </ul>
                   </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="#">Novita <img src="img/chevron-down-solid.svg" alt="" width="10px"></a>
+                  <li class="nav-item dropdown-center">
+                     <a class="nav-link" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                        Novita
+                        <img class="dropdown-toggle" src="img/chevron-down-solid.svg" alt="" width="10px"></a>
+                     <ul class="dropdown-menu">
+                        <li><a href="#" class="dropdown-item">link</a></li>
+                        <li><a href="#" class="dropdown-item">link</a></li>
+                        <li><a href="#" class="dropdown-item">link</a></li>
+                     </ul>
                   </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="#">Fai acquisti <img src="img/chevron-down-solid.svg" alt=""
-                           width="10px"></a>
+                  <li class="nav-item dropdown-center">
+                     <a class="nav-link" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                        Fai acquisti
+                        <img class="dropdown-toggle" src="img/chevron-down-solid.svg" alt="" width="10px">
+                     </a>
+
+                     <ul class="dropdown-menu">
+                        <li><a href="#" class="dropdown-item">link</a></li>
+                        <li><a href="#" class="dropdown-item">link</a></li>
+                        <li><a href="#" class="dropdown-item">link</a></li>
+                     </ul>
                   </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="#">Supporto <img src="img/chevron-down-solid.svg" alt=""
-                           width="10px"></a>
+                  <li class="nav-item dropdown-center">
+                     <a class="nav-link" href="#" data-bs-toggle="dropdown" aria-expanded="false">Supporto <img
+                           class="dropdown-toggle" src="img/chevron-down-solid.svg" alt="" width="10px">
+                     </a>
+
+                     <ul class="dropdown-menu">
+                        <li><a href="#" class="dropdown-item">link</a></li>
+                        <li><a href="#" class="dropdown-item">link</a></li>
+                        <li><a href="#" class="dropdown-item">link</a></li>
+                     </ul>
                   </li>
                </ul>
 
                <ul class="navbar-nav ms-auto">
-                  <li class="nav-item">
-                     <a class="nav-link" href="#">My Playstation <img src="img/chevron-down-solid.svg" alt=""
-                           width="10px"></a>
+                  <li class="nav-item dropdown-center" data-bs-toggle="dropdown" aria-expanded="false">
+                     <a class="nav-link" href="#">
+                        My Playstation
+                        <img src="img/chevron-down-solid.svg" alt="" width="10px" class="dropdown-toggle">
+                     </a>
+
+                     <ul class="dropdown-menu">
+                        <li><a href="#" class="dropdown-item">link</a></li>
+                        <li><a href="#" class="dropdown-item">link</a></li>
+                        <li><a href="#" class="dropdown-item">link</a></li>
+                     </ul>
                   </li>
                   <li class="nav-item">
                      <button class="btn btn-dark rounded-pill">Accedi</button>
@@ -80,10 +131,11 @@
       </nav>
    </header>
    <main>
-      <section class="banner-big-jumbo">
+      <input type="radio" id="returnal" name="jumbo-game-label" class="d-none" checked>
+      <section class="banner-big-jumbo returnal-hero">
          <div class="container pt-5 text-white">
             <div class="row">
-               <div class="col-lg-4">
+               <div class="col-lg-4 col-xxl-6">
                   <img class="img-fluid w-75" src="img/returnal-hero-banner-logo.png" alt="">
                   <h1>Rompi il cerchio</h1>
                   <p>Rialzati dopo ogni sconfitta e affrrronta una nuova sfida con ogni rinascita in questo esplosivo
@@ -93,33 +145,87 @@
             </div>
          </div>
       </section>
+
+      <input type="radio" id="ratchet" name="jumbo-game-label" class="d-none">
+      <section class="banner-big-jumbo ratchet-hero">
+         <div class="container pt-5 text-white">
+            <div class="row">
+               <div class=" col-lg-4 col-xxl-6">
+                  <img class="img-fluid w-75 invisible" src="img/returnal-hero-banner-logo.png" alt="">
+                  <h1>Ratchet Rift Apart</h1>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam quaerat quod aliquam quos minima
+                     laudantium quidem, soluta voluptates nihil dolorum.</p>
+                  <button class="btn btn-success rounded-pill">Acquista ora</button>
+               </div>
+            </div>
+         </div>
+      </section>
       <section>
          <div class="container">
             <div class="row g-3">
-               <div class="col-6 col-sm-4 col-lg-2">
+               <div class="col-6 col-sm-4 col-lg-2 col-xxl">
+                  <!-- <input type="radio" id="returnal-input" name="jumbo-game-label" class="d-none"> -->
                   <div class="card">
-                     <img src="img/returnal-listing-thumb-01-ps5.jpg" alt="" class="img-fluid rounded-4">
+                     <label for="returnal">
+                        <img src="img/returnal-listing-thumb-01-ps5.jpg" alt="" class="img-fluid rounded-4">
+                     </label>
                   </div>
                </div>
-               <div class="col-6 col-sm-4 col-lg-2">
-                  <div class="card"><img src="img/ratchet-and-clank-rift-apart-keyart.jpg" alt=""
-                        class="img-fluid rounded-4"></div>
-               </div>
-               <div class="col-6 col-sm-4 col-lg-2">
-                  <div class="card"><img src="img/returnal-listing-thumb-01-ps5.jpg" alt="" class="img-fluid rounded-4">
+               <div class="col-6 col-sm-4 col-lg-2 col-xxl">
+                  <!-- <input type="radio" id="ratchet" name="jumbo-game-label" class="d-none"> -->
+                  <div class="card">
+                     <label for="ratchet">
+                        <img src="img/ratchet-and-clank-rift-apart-keyart.jpg" alt="" class="img-fluid rounded-4">
+                     </label>
                   </div>
                </div>
-               <div class="col-6 col-sm-4 col-lg-2">
-                  <div class="card"><img src="img/ratchet-and-clank-rift-apart-keyart.jpg" alt=""
-                        class="img-fluid rounded-4"></div>
-               </div>
-               <div class="col-6 col-sm-4 col-lg-2">
-                  <div class="card"><img src="img/returnal-listing-thumb-01-ps5.jpg" alt="" class="img-fluid rounded-4">
+               <div class="col-6 col-sm-4 col-lg-2 col-xxl">
+                  <!-- <input type="radio" id="" name="jumbo-game-label" class="d-none returnal-input"> -->
+                  <div class="card">
+                     <label for="returnal">
+                        <img src="img/returnal-listing-thumb-01-ps5.jpg" alt="" class="img-fluid rounded-4">
+                     </label>
                   </div>
                </div>
-               <div class="col-6 col-sm-4 col-lg-2">
-                  <div class="card"><img src="img/ratchet-and-clank-rift-apart-keyart.jpg" alt=""
-                        class="img-fluid rounded-4"></div>
+               <div class="col-6 col-sm-4 col-lg-2 col-xxl col-xxl">
+                  <!-- <input type="radio" id="" name="jumbo-game-label" class="d-none"> -->
+                  <div class="card">
+                     <label for="ratchet">
+                        <img src="img/ratchet-and-clank-rift-apart-keyart.jpg" alt="" class="img-fluid rounded-4">
+                     </label>
+                  </div>
+               </div>
+               <div class="col-6 col-sm-4 col-lg-2 col-xxl">
+                  <!-- <input type="radio" id="" name="jumbo-game-label" class="d-none"> -->
+                  <div class="card">
+                     <label for="returnal">
+                        <img src="img/returnal-listing-thumb-01-ps5.jpg" alt="" class="img-fluid rounded-4">
+                     </label>
+                  </div>
+               </div>
+               <div class="col-6 col-sm-4 col-lg-2 col-xxl">
+                  <!-- <input type="radio" id="" name="jumbo-game-label" class="d-none"> -->
+                  <div class="card">
+                     <label for="ratchet">
+                        <img src="img/ratchet-and-clank-rift-apart-keyart.jpg" alt="" class="img-fluid rounded-4">
+                     </label>
+                  </div>
+               </div>
+               <div class="col-6 col-sm-4 col-lg-2 col-xxl d-none d-xxl-block">
+                  <!-- <input type="radio" id="" name="jumbo-game-label" class="d-none"> -->
+                  <div class="card">
+                     <label for="ratchet">
+                        <img src="img/returnal-listing-thumb-01-ps5.jpg" alt="" class="img-fluid rounded-4">
+                     </label>
+                  </div>
+               </div>
+               <div class="col-6 col-sm-4 col-lg-2 col-xxl d-none d-xxl-block">
+                  <!-- <input type="radio" id="" name="jumbo-game-label" class="d-none"> -->
+                  <div class="card">
+                     <label for="ratchet">
+                        <img src="img/ratchet-and-clank-rift-apart-keyart.jpg" alt="" class="img-fluid rounded-4">
+                     </label>
+                  </div>
                </div>
             </div>
          </div>
@@ -131,39 +237,101 @@
             <h5 class="text-secondary">Tuffati in nuove possibilità di gioco completamente inaspettate</p>
          </div>
       </section>
-      <section>
+      <section class="p-4">
          <div class="container">
-            <div class="row align-items-center">
-               <div class="col-md-6">
-                  <h2>Console PlayStation 5</h2>
-                  <h5 class="text-secondary py-3">Sperimenta la nuova generazione di incredibili giochi PlayStation</h5>
-                  <button class="btn btn-primary rounded-pill">Maggiori informazioni</button>
+            <div class="accessories-banners">
+               <input type="radio" name="accessory-banner" id="ps5-banner" checked>
+               <div class="row align-items-center ps5-banner">
+                  <div class="col-md-6">
+                     <h2>Console PlayStation 5</h2>
+                     <h5 class="text-secondary py-3">Sperimenta la nuova generazione di incredibili giochi PlayStation
+                     </h5>
+                     <button class="btn btn-primary rounded-pill">Maggiori informazioni</button>
+                  </div>
+                  <div class="col-md-6">
+                     <img src="img/playstation-5-thumb.png" alt="" class="img-fluid">
+                  </div>
                </div>
-               <div class="col-md-6">
-                  <img src="img/playstation-5-thumb.png" alt="" class="img-fluid">
+               <input type="radio" name="accessory-banner" id="dualsense-banner">
+               <div class="row align-items-center dualsense-banner">
+                  <div class="col-md-6">
+                     <h2>Controller wireless DualSense&trade;</h2>
+                     <h5 class="text-secondary py-3">Sperimenta la nuova generazione di incredibili giochi PlayStation
+                     </h5>
+                     <button class="btn btn-primary rounded-pill">Maggiori informazioni</button>
+                  </div>
+                  <div class="col-md-6">
+                     <img src="img/joypad-thumb.png" alt="" class="img-fluid">
+                  </div>
+               </div>
+               <input type="radio" name="accessory-banner" id="pulse-banner">
+               <div class="row align-items-center pulse-banner">
+                  <div class="col-md-6">
+                     <h2>Cuffie wireless con microfono PULSE 3&trade;</h2>
+                     <h5 class="text-secondary py-3">Sperimenta la nuova generazione di incredibili giochi PlayStation
+                     </h5>
+                     <button class="btn btn-primary rounded-pill">Maggiori informazioni</button>
+                  </div>
+                  <div class="col-md-6">
+                     <img src="img/headset-thumb.png" alt="" class="img-fluid">
+                  </div>
+               </div>
+               <input type="radio" name="accessory-banner" id="remote-banner">
+               <div class="row align-items-center remote-banner">
+                  <div class="col-md-6">
+                     <h2>Telecomando Media</h2>
+                     <h5 class="text-secondary py-3">Sperimenta la nuova generazione di incredibili giochi PlayStation
+                     </h5>
+                     <button class="btn btn-primary rounded-pill">Maggiori informazioni</button>
+                  </div>
+                  <div class="col-md-6">
+                     <img src="img/remote-thumb.png" alt="" class="img-fluid">
+                  </div>
+               </div>
+               <input type="radio" name="accessory-banner" id="camera-banner">
+               <div class="row align-items-center camera-banner">
+                  <div class="col-md-6">
+                     <h2>Telecamera HD</h2>
+                     <h5 class="text-secondary py-3">Sperimenta la nuova generazione di incredibili giochi PlayStation
+                     </h5>
+                     <button class="btn btn-primary rounded-pill">Maggiori informazioni</button>
+                  </div>
+                  <div class="col-md-6">
+                     <img src="img/camera-thumb.jpg" alt="" class="img-fluid">
+                  </div>
                </div>
             </div>
+
             <div class="row carousel-accessories">
                <div class="col-4 col-md">
-                  <img src="img/playstation-5-thumb.png" alt="" class="img-fluid">
-                  <p class="text-center d-md-block">Console PS5</p>
-
+                  <label for="ps5-banner">
+                     <img src="img/playstation-5-thumb.png" alt="" class="img-fluid">
+                     <p class="text-center d-md-block">Console PS5</p>
+                  </label>
                </div>
                <div class="col-4 col-md">
-                  <img src="img/joypad-thumb.png" alt="" class="img-fluid">
-                  <p class="text-center d-md-block">Controller wireless DualSense&trade;</p>
+                  <label for="dualsense-banner">
+                     <img src="img/joypad-thumb.png" alt="" class="img-fluid">
+                     <p class="text-center d-md-block">Controller wireless DualSense&trade;</p>
+                  </label>
                </div>
                <div class="col-4 col-md">
-                  <img src="img/headset-thumb.png" alt="" class="img-fluid">
-                  <p class="text-center d-md-block">Cuffie wireless con microfono PULSE 3&trade;</p>
+                  <label for="pulse-banner">
+                     <img src="img/headset-thumb.png" alt="" class="img-fluid">
+                     <p class="text-center d-md-block">Cuffie wireless con microfono PULSE 3&trade;</p>
+                  </label>
                </div>
                <div class="col-4 col-md">
-                  <img src="img/remote-thumb.png" alt="" class="img-fluid">
-                  <p class="text-center d-md-block">Telecomando Media</p>
+                  <label for="remote-banner">
+                     <img src="img/remote-thumb.png" alt="" class="img-fluid">
+                     <p class="text-center d-md-block">Telecomando Media</p>
+                  </label>
                </div>
                <div class="col-4 col-md">
-                  <img src="img/camera-thumb.jpg" alt="" class="img-fluid">
-                  <p class="text-center d-md-block">Telecamera HD</p>
+                  <label for="camera-banner">
+                     <img src="img/camera-thumb.jpg" alt="" class="img-fluid">
+                     <p class="text-center d-md-block">Telecamera HD</p>
+                  </label>
                </div>
             </div>
          </div>
@@ -176,7 +344,7 @@
                   <h2 class="display-4">Un'avventura Cooperativa selvaggia ti attende</h2>
                   <p>Trova un amico e partite insieme per l'avventura più folle delle vostre vite in It Takes Two, un
                      gioco d'avventura cooperativa a piattaforme che stravolge il suo genere.</p>
-                  <button class="btn btn-warning rounded-pill text-white">Acquista ora</button>
+                  <button class="btn btn-danger rounded-pill text-white">Acquista ora</button>
                </div>
             </div>
          </div>
@@ -293,7 +461,7 @@
             </div>
          </div>
       </section>
-      <section class="banner bg-secondary">
+      <section class="banner bg-secondary py-md-0">
          <div class="container">
             <div class="row align-items-center">
                <div class="col-md-6">
@@ -318,18 +486,24 @@
             </div>
             <div class="row">
                <div class="col-md-4 pb-5">
-                  <img src="img/playstation-store-games-under-20-spotlight.jpg" alt="" class="img-fluid">
+                  <a href="#">
+                     <img src="img/playstation-store-games-under-20-spotlight.jpg" alt="" class="img-fluid">
+                  </a>
                </div>
                <div class="col-md-4 pb-5">
-                  <img src="img/playstation-store-golden-week-sale-spotlight.jpg" alt="" class="img-fluid">
+                  <a href="#">
+                     <img src="img/playstation-store-golden-week-sale-spotlight.jpg" alt="" class="img-fluid">
+                  </a>
                </div>
                <div class="col-md-4 pb-5">
-                  <img src="img/playstation-store-free-to-play-spotlight.png" alt="" class="img-fluid">
+                  <a href="#">
+                     <img src="img/playstation-store-free-to-play-spotlight.png" alt="" class="img-fluid">
+                  </a>
                </div>
             </div>
          </div>
       </section>
-      <section class="banner bg-dark">
+      <section class="banner bg-dark py-md-0">
          <div class="container">
             <div class="row align-items-center">
                <div class="col-md-6">
@@ -349,22 +523,22 @@
             <div class="row justify-content-center">
                <div class="col-sm col-lg-6 py-4">
                   <div class="row g-3">
-                     <div class="col-6 col-sm">
+                     <div class="col-6 col-sm social-media">
                         <a href="#">
                            <img src="img/twitter.jpg" alt="" class="img-fluid">
                         </a>
                      </div>
-                     <div class="col-6 col-sm">
+                     <div class="col-6 col-sm social-media">
                         <a href="#">
                            <img src="img/facebook.jpg" alt="" class="img-fluid">
                         </a>
                      </div>
-                     <div class="col-6 col-sm">
+                     <div class="col-6 col-sm social-media">
                         <a href="#">
                            <img src="img/instagram.jpg" alt="" class="img-fluid">
                         </a>
                      </div>
-                     <div class="col-6 col-sm">
+                     <div class="col-6 col-sm social-media">
                         <a href="#">
                            <img src="img/youtube.png" alt="" class="img-fluid">
                         </a>
@@ -378,7 +552,7 @@
    <footer class="bg-primary text-white">
       <div class="container">
          <div class="row">
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-6 col-xxl-2">
                <img src="img/ps-footer.svg" alt="" class="img-fluid w-25 py-4">
                <div>
                   <span>
@@ -393,7 +567,7 @@
                   <span class="px-1">Country/Region: Italy</span>
                </div>
             </div>
-            <div class="col-lg-6 my-5">
+            <div class="col-lg-6 col-xxl my-5">
                <div class="row">
                   <div class="col-md-4">
                      <ul class="my-list-unstyled">
@@ -429,15 +603,14 @@
                </div>
             </div>
          </div>
-         <div class="row">
-            <div class="col-lg-6">
+         <div class="row justify-content-xxl-center">
+            <div class="col-lg-6 text-xxl-center">
                <img src="img/sie-logo.svg" alt="" class="img-fluid w-25">
                <p>Website Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem recusandae iure, ad
                   fugiat numquam quos obcaecati necessitatibus quisquam fugit aspernatur!</p>
             </div>
          </div>
       </div>
-      <!-- SISTEMARE LINK FOOTER IN MD -->
    </footer>
 </body>
 

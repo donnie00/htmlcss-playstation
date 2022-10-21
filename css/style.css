@@ -1,25 +1,9 @@
-.banner-big-jumbo {
-	background-image: url(/img/jumbo-bg.png);
-	padding-top: 300px;
+h1 {
+	font-size: calc(1.375rem + 1.8vw);
 }
 
-.banner-big-2 {
-	background-image: url(/img/it-takes-two-hero-banner-desktop.jpg);
-}
-
-[class^='banner-big'] {
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-}
-
-.carousel-accessories > *:hover {
-	border-bottom: 2px solid blue;
-}
-
-.carousel-accessories * {
-	border-bottom: 2px solid transparent;
-	padding: 0 1rem;
+h2 {
+	font-size: calc(1.375rem + 1.5vw);
 }
 
 footer a {
@@ -36,12 +20,35 @@ footer {
 	padding: 3rem 0;
 }
 
-h1 {
-	font-size: calc(1.375rem + 1.8vw);
+[class^='banner-big'] {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top center;
 }
 
-h2 {
-	font-size: calc(1.375rem + 1.5vw);
+.banner-big-jumbo {
+	padding-top: 300px;
+}
+
+.banner-big-2 {
+	background-image: url(/img/it-takes-two-hero-banner-desktop.jpg);
+}
+
+.banner p {
+	padding: 1rem 0;
+}
+
+.carousel-accessories p {
+	display: none;
+}
+
+.carousel-accessories * {
+	border-bottom: 2px solid transparent;
+	padding: 0 1rem;
+}
+
+.carousel-accessories > *:hover {
+	border-bottom: 2px solid blue;
 }
 
 .card {
@@ -54,10 +61,6 @@ h2 {
 	outline: 2px solid var(--bs-primary);
 }
 
-.carousel-accessories p {
-	display: none;
-}
-
 .my-list-unstyled {
 	list-style: none;
 }
@@ -66,10 +69,43 @@ h2 {
 	padding: 0.2rem 0;
 }
 
-.banner {
-	padding: 0;
+.my-list-unstyled > li > a:hover {
+	opacity: 0.7;
+	color: inherit;
 }
 
-.banner p {
-	padding: 1rem 0;
+#returnal-input:checked ~ .card {
+	outline: 2px solid var(--bs-primary);
+}
+
+.returnal-hero,
+.ratchet-hero {
+	display: none;
+}
+
+#returnal:checked ~ .returnal-hero {
+	background-image: url(/img/jumbo-bg.png);
+	display: block;
+}
+
+#ratchet:checked ~ .ratchet-hero {
+	background-image: url(/img/ratchet-and-clank-rift-apart-keyart.jpg);
+	display: block;
+}
+
+.accessories-banners input,
+.accessories-banners [class$='banner'] {
+	display: none;
+}
+
+[name='accessory-banner']:checked + div {
+	display: flex;
+}
+
+.social-media {
+	transition: scale 0.15s linear;
+}
+
+.social-media:hover {
+	scale: 1.2;
 }
